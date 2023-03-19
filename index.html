@@ -8,6 +8,69 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="card-wrapper">
+        <div>
+          <img src="images/profile_photo-modified.png" alt="prachi_profile" />
+        </div>
+        <div class="user-name">
+          <h1>Prachi Polakhare</h1>
+        </div>
+        <div class="designation">
+          <p>Web Developer</p>
+        </div>
+        <div class="button-group">
+          <button onclick="openModal()" class="btn-card btn-share">
+            <i class="fa-solid fa-share"></i>
+            Share My Profile
+          </button>
+          <button class="btn-card btn-follow">Follow Me</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Component-->
+    <div class="modal">
+      <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Share this via</h3>
+        <div class="icon-container">
+          <a href="#" class="icon" id="facebook"
+            ><i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="icon" id="twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="icon" id="instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="icon" id="whatsapp"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="#" class="icon" id="telegram"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Overlay-->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/0496440cc3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--JS -->
     <script src="./script.js"></script>
   </body>
 </html>
